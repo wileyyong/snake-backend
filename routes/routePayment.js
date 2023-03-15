@@ -33,7 +33,7 @@ router.post('/rewards', async (req, res) => {
       .once("transactionHash", (txhash) => {
         console.log(`Mining transaction ...`);
         console.log(`Transaction hash: ${txhash}`);
-        if (txhash) res.status(200).json({ message: 'Payment successful', data: receipt })
+        if (txhash) res.status(200).json({ message: 'Payment successful' })
       });
 
   } catch (err) {
